@@ -1,0 +1,48 @@
+.card {
+    width: 260px;
+    display: inline-block;
+    border: 1px solid #e5e5e5;
+    border-radius: 14px;
+    overflow: hidden;
+    background: white;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.image-box {
+    width: 200px;
+    height: 250px;
+    overflow: hidden;
+    background: #f6f6f6;
+}
+
+.image-box img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;    
+}
+
+.card-body {
+    padding: 12px;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.price {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.meta {
+    font-size: 13px;
+    color: #666;
+}

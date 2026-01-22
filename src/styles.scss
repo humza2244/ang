@@ -1,8 +1,18 @@
+$font-system: -apple-system, BlinkMacSystemFont,
+  "SF Pro Text", "SF Pro Display",
+  system-ui, -system-ui,
+  "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+
 html, body {
   height: 100%;
   margin: 0;
 }
 
 body {
-  background-color: #925656;
+  background-color: #ffffff;
+}
+
+body {
+  font-family: $font-system;
 }

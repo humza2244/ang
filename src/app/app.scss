@@ -1,3 +1,11 @@
 .page{
     color: rgb(0, 0, 0);
 }
+
+.listings {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center; /* ✅ centers grid */
+    margin-top: 20px;
+}

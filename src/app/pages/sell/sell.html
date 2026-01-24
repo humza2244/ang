@@ -1,1 +1,145 @@
-<p>sell works!</p>
+<app-header></app-header>
+
+<div class="sell-container">
+  <div class="sell-content">
+    <div class="sell-header">
+      <h1>Create New Listing</h1>
+      <p>Fill out the form below to list your item for sale</p>
+    </div>
+
+    <form class="sell-form">
+      <div class="form-section">
+        <h2>Basic Information</h2>
+        
+        <div class="form-group">
+          <label for="title">Title *</label>
+          <input 
+            type="text" 
+            id="title" 
+            name="title" 
+            placeholder="e.g., MacBook Pro 2021"
+            class="form-input"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="description">Description *</label>
+          <textarea 
+            id="description" 
+            name="description" 
+            placeholder="Describe your item in detail..."
+            class="form-textarea"
+            rows="6"
+            required
+          ></textarea>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="price">Price ($) *</label>
+            <input 
+              type="number" 
+              id="price" 
+              name="price" 
+              placeholder="0.00"
+              class="form-input"
+              min="0"
+              step="0.01"
+              required
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="category">Category *</label>
+            <select id="category" name="category" class="form-select" required>
+              <option value="">Select a category</option>
+              <option value="electronics">Electronics</option>
+              <option value="furniture">Furniture</option>
+              <option value="clothing">Clothing</option>
+              <option value="books">Books</option>
+              <option value="vehicles">Vehicles</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="condition">Condition *</label>
+            <select id="condition" name="condition" class="form-select" required>
+              <option value="">Select condition</option>
+              <option value="new">New</option>
+              <option value="like-new">Like New</option>
+              <option value="excellent">Excellent</option>
+              <option value="good">Good</option>
+              <option value="fair">Fair</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="location">Location *</label>
+            <select id="location" name="location" class="form-select" required>
+              <option value="">Select location</option>
+              <option value="waterloo">Waterloo</option>
+              <option value="toronto">Toronto</option>
+              <option value="ottawa">Ottawa</option>
+              <option value="montreal">Montreal</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <h2>Images</h2>
+        <div class="image-upload-area">
+          <div class="upload-box">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="17 8 12 3 7 8"></polyline>
+              <line x1="12" y1="3" x2="12" y2="15"></line>
+            </svg>
+            <p>Click to upload or drag and drop</p>
+            <p class="upload-hint">PNG, JPG up to 10MB</p>
+          </div>
+          <input type="file" id="images" name="images" multiple accept="image/*" class="file-input">
+        </div>
+        <div class="uploaded-images">
+          <!-- Uploaded image previews will appear here -->
+        </div>
+      </div>
+
+      <div class="form-section">
+        <h2>Contact Information</h2>
+        
+        <div class="form-group">
+          <label for="contact-email">Contact Email *</label>
+          <input 
+            type="email" 
+            id="contact-email" 
+            name="contact-email" 
+            placeholder="your.email@example.com"
+            class="form-input"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="contact-phone">Phone Number (optional)</label>
+          <input 
+            type="tel" 
+            id="contact-phone" 
+            name="contact-phone" 
+            placeholder="(555) 123-4567"
+            class="form-input"
+          >
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <button type="button" class="btn-cancel">Cancel</button>
+        <button type="submit" class="btn-submit">Publish Listing</button>
+      </div>
+    </form>
+  </div>
+</div>

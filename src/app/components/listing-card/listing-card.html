@@ -1,11 +1,13 @@
-<div class="card">
-  <div class="image-box">
-    <img src="assets/papersol.png" alt="Listing image" />
-  </div>
+<a [routerLink]="['/listing', listing.id]" class="card-link">
+  <div class="card">
+    <div class="image-box">
+      <img [src]="listing.image" [alt]="listing.title" />
+    </div>
 
-  <div class="card-body">
-    <div class="title">MacBook Pro 2021</div>
-    <div class="price">$1200</div>
-    <div class="meta">Electronics • Waterloo</div>
+    <div class="card-body">
+      <div class="title">{{ listing.title }}</div>
+      <div class="price">${{ listing.price }}</div>
+      <div class="meta">{{ listing.category }} • {{ listing.location }}</div>
+    </div>
   </div>
-</div>
+</a>
